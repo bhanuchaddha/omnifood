@@ -1,0 +1,95 @@
+/*big tablet to small screen laptop. screens for which row width 1140 would not work. from 1024px to 1200px*/
+/*we are not with that row 1140 should touch the edges. we want to keep some margin like 30px each side. screen 1200 and below would not provide that */
+@media only screen and (max-width: 1200px){
+    .hero-text-box{
+        width: 100%;
+        padding: 0 2%;
+    }
+    
+    .row { padding: 0 2%;}
+}
+
+/*small tablet to big tablet from 768px to 1023px*/
+@media screen and (max-width: 1023px){
+    body {font-size: 18px;}
+    section { padding: 50px 0;}
+    .long-copy{
+        width: 80%;
+        margin-left: 10%;/*this will center align the para*/
+    }
+    
+    .steps-box:last-child { padding-top: 100px;}
+    .app-screen { width: 50%;}
+    .works-step { margin-bottom: 60px;}
+    
+    .icon-small{
+        width: 17px;
+        margin-right: 10px;
+    }
+    
+    .city-feature { font-size: 90%;}
+    .plan-box{
+        width: 100%;
+        margin-left: 0;
+    }
+    .plan-price { font-size: 250%;}
+    .contact-form {width: 80%;}
+
+}
+
+
+
+
+/*Medium screen like iphone6-7 and small tablet from 481px to 767px*/
+@media only screen and (max-width: 767px){
+    body { font-size: 16px;}
+    section { padding: 30px 0;}
+    
+    .row,
+    .hero-text { padding: 0 4%;}
+    
+    .col { 
+        width: 100%;
+        margin: 0 0 4% 0;/* fixing col margins from grid*/
+    }
+    h1 { font-size: 180%;}
+    h2 { font-size: 150%;}
+    
+    .long-copy{
+        width: 100%;
+        margin-left: 0;/*this will center align the para*/
+    }
+    
+    .main-nav { display: none;}
+    .works-step { margin-bottom: 20px;}
+    .works-step:last-of-type { margin-bottom: 30px;}
+    
+    .works-step div{
+        height: 40px;
+        width: 40px;
+        padding: 5px;
+        font-size: 120%;
+        float: left;
+        margin-right: 10px;
+    }
+    .app-screen { width: 40%; }
+    .steps-box:first-child { text-align: center; }
+    .steps-box:last-child { padding-top: 50px;}
+}
+
+
+
+/*Small screen like iphone4 from 0 to 480px*/
+@media only screen and (max-width: 480px){
+    section { padding: 25px 0;}
+    .contact-form {width: 100%;}
+    
+    input[type=submit],
+    .btn:visited,
+    .btn:link{
+        padding: 7px 20px;
+        font-weight: 300;
+    }
+    
+    .hero-text { padding: 0 10%;}
+}
